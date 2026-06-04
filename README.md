@@ -1,8 +1,16 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/88457ded-a0f8-4e19-a907-66fe48b2d029" width="55" height="55" alt="PDAM Logo" />
-  &nbsp;&nbsp;
-  <strong style="font-size:1.8em">PDAM — Water Utility Management System</strong>
-</p>
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td valign="middle">
+        <img src="https://github.com/user-attachments/assets/88457ded-a0f8-4e19-a907-66fe48b2d029" width="52" height="52" alt="PDAM Logo" />
+      </td>
+      <td valign="middle">&nbsp;&nbsp;</td>
+      <td valign="middle">
+        <h1 style="margin:0;padding:0">PDAM — Water Utility Management System</h1>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Flutter-3.28.3-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
