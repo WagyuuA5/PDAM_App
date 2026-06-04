@@ -1,4 +1,8 @@
-# 💧 PDAM — Water Utility Management System
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/88457ded-a0f8-4e19-a907-66fe48b2d029" width="55" height="55" alt="PDAM Logo" />
+  &nbsp;&nbsp;
+  <strong style="font-size:1.8em">PDAM — Water Utility Management System</strong>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Flutter-3.28.3-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
@@ -60,7 +64,9 @@ The app implements **role-based access control (RBAC)** with JWT authentication,
 <p align="center">
   <sub>Add New Bill &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Payment Confirmation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add New Service</sub>
 </p>
+
 <br/>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ff39cb32-32cb-4cf7-8b58-2a0559905d74" width="180" alt="Register Customer" />
   &nbsp;&nbsp;
@@ -71,7 +77,9 @@ The app implements **role-based access control (RBAC)** with JWT authentication,
 <p align="center">
   <sub>Register Customer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manage Services &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manage Bills</sub>
 </p>
+
 <br/>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/eaf7ff60-fd1f-412f-ab2f-c58a62c00b64" width="180" alt="Admin Profile" />
   &nbsp;&nbsp;
@@ -204,7 +212,40 @@ The backend API is documented and tested using Postman.
 
 ---
 
+## 📁 Project Structure
 
+```
+lib/
+├── core/
+│   ├── constants/         # API URLs, app constants
+│   ├── errors/            # Custom exception classes
+│   ├── network/           # Dio client, interceptors, token injection
+│   └── utils/             # Formatters, validators, helpers
+├── data/
+│   ├── models/            # JSON-serializable data models
+│   ├── repositories/      # Data layer (API calls)
+│   └── datasources/       # Remote data sources
+├── domain/
+│   ├── entities/          # Business logic entities
+│   └── usecases/          # Use case abstractions
+├── presentation/
+│   ├── auth/              # Login screen
+│   ├── admin/
+│   │   ├── dashboard/     # Admin home
+│   │   ├── customers/     # Customer management
+│   │   ├── services/      # Service tier management
+│   │   └── bills/         # Bill management & verification
+│   ├── customer/
+│   │   ├── statements/    # Bill history & payment
+│   │   └── profile/       # Customer profile
+│   └── shared/
+│       ├── widgets/       # Reusable UI components
+│       └── theme/         # App theme, colors, typography
+├── routes/                # GoRouter configuration with guards
+└── main.dart
+```
+
+---
 
 ## 🔒 Role-Based Access
 
