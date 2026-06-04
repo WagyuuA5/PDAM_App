@@ -220,39 +220,6 @@ The backend API is documented and tested using Postman.
 
 ---
 
-## 📁 Project Structure
-
-```
-lib/
-├── core/
-│   ├── constants/         # API URLs, app constants
-│   ├── errors/            # Custom exception classes
-│   ├── network/           # Dio client, interceptors, token injection
-│   └── utils/             # Formatters, validators, helpers
-├── data/
-│   ├── models/            # JSON-serializable data models
-│   ├── repositories/      # Data layer (API calls)
-│   └── datasources/       # Remote data sources
-├── domain/
-│   ├── entities/          # Business logic entities
-│   └── usecases/          # Use case abstractions
-├── presentation/
-│   ├── auth/              # Login screen
-│   ├── admin/
-│   │   ├── dashboard/     # Admin home
-│   │   ├── customers/     # Customer management
-│   │   ├── services/      # Service tier management
-│   │   └── bills/         # Bill management & verification
-│   ├── customer/
-│   │   ├── statements/    # Bill history & payment
-│   │   └── profile/       # Customer profile
-│   └── shared/
-│       ├── widgets/       # Reusable UI components
-│       └── theme/         # App theme, colors, typography
-├── routes/                # GoRouter configuration with guards
-└── main.dart
-```
-
 ---
 
 ## 🔒 Role-Based Access
